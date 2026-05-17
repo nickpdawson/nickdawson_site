@@ -28,7 +28,7 @@ I have an ambitious roadmap. Next up: calendar imports so life events become par
 
 **A few honest caveats.** OwnChart is in alpha. It is not trivial to install or set up. It is for the curious, the technical, and the brave. I built it the way I did — open source, self-hosted, patient-owned — because the alternative is another company sitting between you and your own life. That tradeoff is real, and I'm not going to pretend the on-ramp is easy yet. It will get easier.
 
-For the curious there's a read-only [demo](https://www.ownchart.me) (sign in with `demo@ownchart.me` / `MYHEALTHdata`) and a [TestFlight preview](https://testflight.apple.com/join/TODO) of the iOS app while it works through Apple's approval process.
+For the curious there's a read-only [demo](https://www.ownchart.me) (sign in with `demo@ownchart.me` / `MYHEALTHdata`) and a [TestFlight preview](https://testflight.apple.com/join/z8QemcTe) of the iOS app while it works through Apple's approval process.
 
 This project has been a labor of love. It came out of a deep belief that the best thing we can build for people navigating inscrutable systems is more agency, more standing, and more capacity to understand their own lives. Having a lifetime of medical history in one place I can query with natural language and built-in clinical expertise has already changed how I show up in my own care.
 
