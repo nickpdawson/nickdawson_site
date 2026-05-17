@@ -14,7 +14,7 @@ That moment crystallized something I've been circling for years. A through line 
 
 Data without the means to understand it is just paperwork. Data plus on-demand, trustworthy expertise is something else entirely. It's standing.
 
-So this week I'm launching **OwnChart** — an open source platform and iPhone app that lets patients and caregivers collect the meaningful data about their life, their body, and their clinical care, and then actually query and examine that data with the help of a large language model.
+So this week I'm launching [**OwnChart**](https://ownchart.me) — an [open source platform](https://github.com/nickpdawson/OwnChart) and iPhone app that lets patients and caregivers collect the meaningful data about their life, their body, and their clinical care, and then actually query and examine that data with the help of a large language model.
 
 The point is not a data repository. The point is agency.
 
