@@ -1,0 +1,29 @@
+{
+  "groups": [
+    {
+      "label": "Sites",
+      "items": [
+        { "label": "nick.ski", "href": "https://nick.ski", "note": "Teaching turns at Jackson Hole" },
+        { "label": "foundlight.net", "href": "https://foundlight.net", "note": "Photography" },
+        { "label": "ownchart.me", "href": "https://www.ownchart.me", "note": "OwnChart" }
+      ]
+    },
+    {
+      "label": "Social",
+      "items": [
+        { "label": "Instagram", "href": "https://www.instagram.com/nickpdawson", "note": "@nickpdawson" },
+        { "label": "Threads", "href": "https://www.threads.com/@nickpdawson", "note": "@nickpdawson" },
+        { "label": "LinkedIn", "href": "https://www.linkedin.com/in/nickpdawson" },
+        { "label": "TikTok", "href": "https://www.tiktok.com/@cleetusmcskis", "note": "@cleetusmcskis · for skis only" },
+        { "label": "GitHub", "href": "https://github.com/nickpdawson", "note": "@nickpdawson" }
+      ]
+    },
+    {
+      "label": "Book",
+      "items": [
+        { "label": "Artists Remaking Medicine — Uncommon Bold", "href": "https://uncommonbold.com/books/" },
+        { "label": "Artists Remaking Medicine — Amazon", "href": "https://www.amazon.com/Artists-Remaking-Medicine-imagination-healthcare/dp/B0C8R1RC1D/" }
+      ]
+    }
+  ]
+}

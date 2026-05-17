@@ -1,0 +1,34 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base title="Lectures · Nick Dawson" description="Teaching design at Stanford and Montana State.">
+  <p class="back-link"><a href="/">← Now</a></p>
+
+  <h1 class="room-headline">Lectures</h1>
+
+  <p class="room-intro">
+    Currently teaching at two places.
+  </p>
+
+  <section class="wall">
+
+    <article class="wall-item">
+      <p class="eyebrow">Stanford School of Medicine · SASI</p>
+      <h2>Healthcare Design</h2>
+      <p>A course for med students about the work that happens before the prescription pad: curiosity, collaboration, and designing care around the person in front of you. The premise — that this is upstream of becoming a more human-centered doctor.</p>
+    </article>
+
+    <article class="wall-item">
+      <p class="eyebrow">Montana State · 400-level</p>
+      <h2>Human-Centered Innovation</h2>
+      <p>A course built on a wager: that designing for actual people and actual communities both feels right and outlasts work that doesn't. Students get to prove or disprove it.</p>
+    </article>
+
+  </section>
+
+  <Nav />
+  <Footer />
+</Base>

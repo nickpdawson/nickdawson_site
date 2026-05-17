@@ -1,0 +1,87 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base title="Hello · Nick Dawson" description="Get in touch.">
+  <p class="back-link"><a href="/">← Now</a></p>
+
+  <h1 class="room-headline">Say hello.</h1>
+
+  <p class="room-intro">
+    Say hello. Use the form below — I read everything and reply to most.
+  </p>
+
+  <!-- TODO: wire up Cloudflare Turnstile + Worker endpoint -->
+  <form class="hello-form" action="/api/hello" method="POST">
+    <label>
+      <span class="eyebrow">Your name</span>
+      <input type="text" name="name" required />
+    </label>
+    <label>
+      <span class="eyebrow">Email</span>
+      <input type="email" name="email" required />
+    </label>
+    <label>
+      <span class="eyebrow">Message</span>
+      <textarea name="message" rows="6" required></textarea>
+    </label>
+    <p><em>Turnstile + handler coming next.</em></p>
+    <button type="submit" disabled>Send</button>
+  </form>
+
+  <Nav />
+  <Footer />
+</Base>
+
+<style>
+  .hello-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 32em;
+  }
+
+  .hello-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+
+  .hello-form input,
+  .hello-form textarea {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.6rem 0.8rem;
+    border: 1px solid var(--hair);
+    border-radius: 4px;
+    background: var(--paper);
+    color: var(--ink);
+  }
+
+  .hello-form input:focus,
+  .hello-form textarea:focus {
+    outline: 2px solid var(--flair);
+    outline-offset: 1px;
+  }
+
+  .hello-form button {
+    align-self: flex-start;
+    font-family: inherit;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 0.6rem 1.4rem;
+    background: var(--ink);
+    color: var(--paper);
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  .hello-form button:disabled {
+    background: var(--muted);
+    cursor: not-allowed;
+  }
+</style>

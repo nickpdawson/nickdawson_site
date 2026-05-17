@@ -1,0 +1,35 @@
+---
+interface Props {
+  eyebrow: string;
+  title: string;
+  image?: string;
+  imageAlt?: string;
+  imageClass?: string;
+  imageHref?: string;
+  className?: string;
+}
+
+const {
+  eyebrow,
+  title,
+  image,
+  imageAlt = '',
+  imageClass = '',
+  imageHref,
+  className = '',
+} = Astro.props;
+---
+
+<article class={`wall-item ${className}`.trim()}>
+  <p class="eyebrow">{eyebrow}</p>
+  <h2>{title}</h2>
+  {image && imageHref && (
+    <a href={imageHref} class="screenshot-link">
+      <img src={image} alt={imageAlt} class={`screenshot ${imageClass}`.trim()} />
+    </a>
+  )}
+  {image && !imageHref && (
+    <img src={image} alt={imageAlt} class={`screenshot ${imageClass}`.trim()} />
+  )}
+  <slot />
+</article>

@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+
+// Edit src/data/links.json to update this page.
+import linksData from '../data/links.json';
+---
+
+<Base title="Links · Nick Dawson" description="Where Nick lives on the web.">
+  <p class="back-link"><a href="/">← Now</a></p>
+
+  <h1 class="room-headline">Links</h1>
+
+  <p class="room-intro">
+    Where to find me on the rest of the web.
+  </p>
+
+  <section class="wall">
+    {linksData.groups.map((group: { label: string; items: { label: string; href: string; note?: string }[] }) => (
+      <article class="wall-item">
+        <p class="eyebrow">{group.label}</p>
+        <ul class="notes-list">
+          {group.items.map((item) => (
+            <li>
+              <h2><a href={item.href}>{item.label}</a></h2>
+              {item.note && <time>{item.note}</time>}
+            </li>
+          ))}
+        </ul>
+      </article>
+    ))}
+  </section>
+
+  <Nav />
+  <Footer />
+</Base>

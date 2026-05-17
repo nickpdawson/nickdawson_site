@@ -1,0 +1,85 @@
+---
+import Base from '../layouts/Base.astro';
+import Headline from '../components/Headline.astro';
+import WallItem from '../components/WallItem.astro';
+import Pointer from '../components/Pointer.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base>
+  <Headline />
+
+  <p class="opener">
+    Designer, educator, maker. I teach design at Stanford and Montana State. I've led design teams at Hopkins, Kaiser, and the Obama White House, <em>among others</em>. I build things on the side.
+  </p>
+
+  <section class="wall">
+
+    <WallItem
+      className="wall-item--ownchart"
+      eyebrow="A tool"
+      title="OwnChart"
+      image="/assets/ownchart-timeline.png"
+      imageAlt="OwnChart iOS Timeline view — colored event lanes across 2026 and 2025: Clinical, Personal, Docs, Notes, Life"
+      imageClass="screenshot--phone"
+      imageHref="https://www.ownchart.me"
+    >
+      <p>A small wager against the knowledge asymmetries that keep patients in low-power status. Your records, scans, wearables, life events — held on your hardware, with an on-demand expert (the LLM of your choice) to read them alongside you. You stay the authority on your own story.</p>
+      <p><a href="https://www.ownchart.me">ownchart.me</a><span class="arrow">→</span></p>
+    </WallItem>
+
+    <WallItem
+      className="wall-item--talk"
+      eyebrow="A talk"
+      title="The Zucchini Problem"
+      image="/assets/dawson-talk.jpg"
+      imageAlt="Nick Dawson giving a talk on a conference stage"
+      imageClass="screenshot--talk"
+      imageHref="https://vimeo.com/371036107/60bac80970"
+    >
+      <p>A talk at Believe in Better — where you were born shouldn't determine your outcome. The argument runs through Ward 8, the zucchini problem, and the case for treating community health with the same precision we bring to MRI machines.</p>
+    </WallItem>
+
+    <WallItem
+      className="wall-item--book"
+      eyebrow="A book"
+      title="Artists Remaking Medicine"
+      image="/assets/artists-remaking-medicine.webp"
+      imageAlt="Artists Remaking Medicine — advance uncorrected galley, photographed on a marble surface with a glass mug, raking shadows from window light"
+      imageClass="screenshot--book"
+      imageHref="https://uncommonbold.com/books/"
+    >
+      <p>A dare to healthcare workers to make the work a creative practice — to be curious, to honor a mission, to treat patient care as art. Better for the patient. Better for the worker. My chapter is <em>Inside Job.</em></p>
+      <p>
+        <a href="https://uncommonbold.com/books/">Uncommon Bold</a><span class="sep-dot">·</span><a href="https://www.amazon.com/Artists-Remaking-Medicine-imagination-healthcare/dp/B0C8R1RC1D/">Amazon</a>
+      </p>
+    </WallItem>
+
+    <WallItem
+      className="wall-item--piece"
+      eyebrow="A piece"
+      title="Bridger Ridge Light"
+    >
+      <p>A view, brought inside. The Bridger Ridge is visible only from the second floor; the main living space looks the wrong way. So a light in that room tracks the mountain's weather and color — the room reactive to the ridge, the way the ridge is reactive to the sky.</p>
+    </WallItem>
+
+    <div class="pointers-cluster">
+      <Pointer eyebrow="Currently teaching">
+        <p>Healthcare Design at Stanford (SASI) and Human-Centered Innovation at Montana State. <a href="/lectures">Lectures</a><span class="arrow">→</span></p>
+      </Pointer>
+
+      <Pointer eyebrow="Pictures">
+        <p>When there's time — <a href="https://foundlight.net">foundlight.net</a>.</p>
+      </Pointer>
+
+      <Pointer eyebrow="On skis">
+        <p>Teaching turns and changing lives at Jackson Hole — <a href="https://nick.ski">nick.ski</a>.</p>
+      </Pointer>
+    </div>
+
+  </section>
+
+  <Nav />
+  <Footer />
+</Base>
